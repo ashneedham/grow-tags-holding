@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, main, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Asap, sans-serif;
+  font-weight: lighter;
+  line-height: 1.5;
+}
+
+P {
+  margin-bottom: 1.5em;
+}
+P.small {
+  font-size: 0.65em;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Ostrich Sans", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.2em;
+  line-height: 1.1;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Ostrich Sans", sans-serif;
+  font-weight: 900;
+  margin-bottom: 0.4em;
+  line-height: 1.1;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Ostrich Sans", sans-serif;
+  font-weight: 900;
+  margin-bottom: 0.4em;
+  line-height: 1.1;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+main {
+  font-size: 1.15rem;
+}
+@media (min-width: 1024px) {
+  main {
+    font-size: 1.5rem;
+  }
+}
+
+header #logo {
+  width: 9rem;
+  margin-bottom: 1em;
+}
+@media (min-width: 1024px) {
+  header #logo {
+    width: 11rem;
+    margin-bottom: 1em;
+  }
+}
+
+input[type=text] {
+  font-family: "Ostrich Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  padding: 0.85em 1.2em 0.55em 1.2em;
+  outline: #194A2A solid 3px;
+  border: #7FD2C1 solid 1px;
+  border-radius: 7px;
+  background: #7FD2C1;
+  line-height: 1;
+  letter-spacing: 2px;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  input[type=text] {
+    width: 25em;
+  }
+}
+input[type=text]:active, input[type=text]:focus {
+  background: #94D9CB;
+  border-color: rgb(63.6363636364, 188.3636363636, 106.9090909091);
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+input[type=button] {
+  display: inline-block;
+  background: #194A2A;
+  color: #D7E0DA;
+  font-family: "Ostrich Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.85em 1.6em 0.55em 1.6em;
+  border: #194A2A solid 4px;
+  line-height: 1;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+input[type=button]:hover {
+  background: rgb(37.8787878788, 112.1212121212, 63.6363636364);
+  border-color: rgb(37.8787878788, 112.1212121212, 63.6363636364);
+  transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.form-row {
+  margin-bottom: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+#errorMsgDiv {
+  color: #983236;
+}
+
+.SIGNUP_FLD {
+  display: flex;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .SIGNUP_FLD {
+    width: auto;
+  }
+}
+.SIGNUP_FLD input[type=text] {
+  flex: 1;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: url("../img/bg-watermark.svg") no-repeat bottom right #7FD2C1;
+  background-size: 300px;
+  color: #194A2A;
+  font-size: 10px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  body {
+    background-size: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-size: 550px;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    background-size: 700px;
+  }
+}
+
+.wrapper {
+  max-width: 700px;
+  padding: 3em 2em 0 3em;
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 900px;
+    padding-top: 5em;
+    padding-left: 6em;
+  }
+}
+@media (min-width: 1280px) {
+  .wrapper {
+    padding-top: 7em;
+    padding-left: 10em;
+  }
+}
+
+#email-signup-form {
+  margin-top: 3em;
+}
+
+.hidden-on-load {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=app.css.map */
