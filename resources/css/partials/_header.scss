@@ -1,0 +1,13 @@
+header {
+
+    #logo {
+        width: 9rem;
+        margin-bottom: 1em;
+
+        @include respond-to(md) {
+            width: 11rem;
+            margin-bottom: 1em;
+        }
+    }
+
+}

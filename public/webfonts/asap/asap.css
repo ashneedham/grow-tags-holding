@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: 100 900; /* Supports all weights from 100 to 900 */
+    src: url('asap.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Asap';
+    font-style: italic;
+    font-weight: 100 900;
+    src: url('asap-italic.ttf') format('truetype');
+}

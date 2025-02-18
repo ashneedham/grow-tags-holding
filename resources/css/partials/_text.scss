@@ -1,0 +1,60 @@
+body {
+    font-family: Asap, sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+P {
+    margin-bottom: 1.5em;
+
+    &.small {
+        font-size: 0.65em;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Ostrich Sans", sans-serif;
+    font-weight: 900;
+    margin-bottom: 1.2em;
+    line-height: 1.1;
+
+    @include respond-to(md) {
+        font-size: 4rem;
+    }
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: "Ostrich Sans", sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    line-height: 1.1;
+
+    @include respond-to(md) {
+        font-size: 3rem;
+    }
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: "Ostrich Sans", sans-serif;
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    line-height: 1.1;
+
+    @include respond-to(md) {
+        font-size: 1.5rem;
+    }
+
+}
+
+main {
+    font-size: 1.15rem;
+
+    @include respond-to(md) {
+        font-size: 1.5rem;
+    }
+}
